@@ -4,11 +4,11 @@ See, manage and control what is going on in your Cucumber test runs.
 This project is still in early development and not yet usable.
 
 Roadmap:
-[ ] Cucumber analytics using d3 and crossfilter
-[ ] Docker
-[ ] Runners
-[ ] Interface
-[ ] APIs
+  [ ] Cucumber analytics using d3 and crossfilter
+  [ ] Docker
+  [ ] Runners
+  [ ] Interface
+  [ ] APIs
 
 To get up and running:
 1. Install Meteor - curl https://install.meteor.com/ | sh
