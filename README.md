@@ -1,2 +1,2 @@
-# sea-cucumber
+# see-cucumber
 See what is going on in your Cucumber test runs
