@@ -1,0 +1,98 @@
+<template name="landing">
+    {{>forkme url="https://github.com/riaan53/see-cucumber"}}
+
+    <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">See Cucumber</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">See, manage and control what is going on in your Cucumber test runs</h5>
+      </div>
+      <div class="row center">
+        {{#if currentUser}}
+          <a href="{{pathFor 'projects'}}" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+        {{else}}
+            <a href="{{pathFor 'register'}}" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+        {{/if}}
+      </div>
+      <br><br>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="mdi-av-equalizer"></i></h2>
+            <h5 class="center">Analytics</h5>
+
+            <p class="light">Perform powerful live analytics on your test results including all historical results</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="mdi-social-share"></i></h2>
+            <h5 class="center">Parallel Executions</h5>
+
+            <p class="light">Register multiple Cucumber runners to perform parallel executions</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="mdi-action-settings"></i></h2>
+            <h5 class="center">Docker Management</h5>
+
+            <p class="light">Manage and control your environment with Docker</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+
+    <div class="section">
+
+    </div>
+  </div>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+</template>

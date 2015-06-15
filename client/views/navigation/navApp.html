@@ -1,0 +1,30 @@
+<template name="navApp">
+
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper">
+
+      <ul class="left hide-on-med-and-down">
+        <li><a href="{{pathFor 'projects'}}"><i class="mdi-action-view-module"></i></a></li>
+        <li><a href="#"><i class="mdi-av-play-arrow green-text"></i></a></li>
+      </ul>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#"><i class="tiny mdi-notification-adb"></i></a></li>
+        <li><a href="#"><i class="tiny mdi-action-search"></i></a></li>
+        <li><a href="#"><i class="tiny mdi-action-help"></i></a></li>
+        {{#if currentUser}}
+          {{> navAppProfile}}
+        {{else}}
+            <li><a href="{{pathFor 'login'}}">Login</a></li>
+        {{/if}}
+
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="{{pathFor 'login'}}">Login</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    </div>
+  </nav>
+
+</template>

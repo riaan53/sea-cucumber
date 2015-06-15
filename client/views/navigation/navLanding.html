@@ -1,0 +1,22 @@
+<template name="navLanding">
+
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="{{pathFor 'landing'}}" class="brand-logo">See Cucumber</a>
+      <ul class="right hide-on-med-and-down">
+
+        {{#if currentUser}}
+          {{> navLandingProfile}}
+        {{else}}
+            <li><a href="{{pathFor 'login'}}">Login</a></li>
+        {{/if}}
+
+
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="{{pathFor 'login'}}">Login</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    </div>
+  </nav>
+</template>
