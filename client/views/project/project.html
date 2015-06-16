@@ -1,3 +1,25 @@
 <template name="project">
-  project
+  <div class="grid">
+    {{#each features}}
+         <div class="grid-item">
+        <ul class="collapsible popout" data-collapsible="expandable">
+        <li>
+          <div class="collapsible-header"><i class="mdi-image-filter-drama"></i>Feature: {{name}}</div>
+          <div class="collapsible-body"><p>{{description}}</p></div>
+        </li>
+        {{#each scenarios}}
+          <li>
+            <div class="collapsible-header"><i class="mdi-maps-place"></i>Scenario: {{name}}</div>
+            <div class="collapsible-body white"><p>
+              {{#each steps}}
+                {{name}}<br>
+              {{/each}}
+              </p></div>
+          </li>
+        {{/each}}
+      </ul>
+      </div>
+    {{/each}}
+  </div>
+  {{> projectActions}}
 </template>

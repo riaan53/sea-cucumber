@@ -1,0 +1,29 @@
+<template name="addTest">
+  <div class="row">
+    <form class="col s6 offset-s4">
+      <h5>Add Test</h5>
+      <div class="row">
+        <div class="input-field col s6">
+          <textarea id="description" class="materialize-textarea"></textarea>
+          <label for="description">Feature</label>
+        </div>
+      </div>
+      <!--{{#each numScenario}}-->
+        <div class="row">
+          <div class="input-field col s6">
+            <textarea id="description" class="materialize-textarea"></textarea>
+            <label for="description">Scenario</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <textarea id="description" class="materialize-textarea"></textarea>
+            <label for="description">Steps</label>
+          </div>
+        </div>
+      <!--{{/each}}-->
+      <a class="waves-effect waves-light btn" id="addScenario"><i class="mdi-content-add left"></i>Scenario</a>
+    </form>
+  </div>
+  {{> addTestActions}}
+</template>

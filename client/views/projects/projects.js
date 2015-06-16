@@ -9,7 +9,7 @@ Template.projects.events({
     event.preventDefault();
     Session.set('curProjectId',this._id);
     Session.set('curProjectName',this.name);
-    Router.go('/app/'+this._id);
+    Router.go('/app/projects/'+this._id);
   }
 
 })

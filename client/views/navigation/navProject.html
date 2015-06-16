@@ -6,14 +6,14 @@
       <a href="#" class="brand-logo center">{{projectName}}</a>
 
       <ul class="left hide-on-med-and-down">
-        <li><a href="{{pathFor 'projects'}}"><i class="mdi-action-view-module"></i></a></li>
+        <li><a href="{{pathFor 'projects'}}"><i class="mdi-navigation-apps"></i></a></li>
         <li><a href="#"><i class="mdi-av-play-arrow green-text"></i></a></li>
+        <li><a href="#"><i class="mdi-av-my-library-books"></i></a></li>
       </ul>
 
       <ul class="right hide-on-med-and-down">
-        <li><a href="#"><i class="tiny mdi-notification-adb"></i></a></li>
         <li><a href="#"><i class="tiny mdi-action-search"></i></a></li>
-        <li><a href="#"><i class="tiny mdi-action-help"></i></a></li>
+        <li><a href="#"><i class="tiny mdi-social-notifications"></i></a></li>
         {{#if currentUser}}
           {{> navAppProfile}}
         {{else}}
